@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---Variables Define--- */
+:root {
+    --primary-color: #d49e3a;
+    --secondary-color: #F6F2E2;
+    --darkish-color: #2A2F33;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --black-color: #03070a;
+    --text-color: #555;
+    --text-gray: #999;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+    --third-font: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 
+===================================
+    Custom Scrollbar Design
+===================================
+*/
+
+::-webkit-scrollbar {
+    width: 0.525rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5rem;
+}
+
+
+
+
+/* 
+===================================
+    Custom CSS Design
+===================================
+*/
+
+h1 {
+    font-size: 3rem;
+    /* margin-bottom: 2rem; */
+    color: var(--primary-color);
+    font-family: var(--third-font);
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    line-height: 3rem;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+h4 {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+.main-btn {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: 600;
+    color: var(--white-color);
+    transition: 0.2s ease-in;
+    border-radius: 50rem;
+}
+
+.main-btn:hover {
+    border: 1px solid var(--white-color);
+}
+
+.white-btn {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--primary-color);
+    border-radius: 50rem;
+}
+
+.white-btn:hover {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+
+.text-content {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.715), rgba(3, 12, 20, 0.589)),
+        url('/assets/images/Motion Graphics/2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar-wrapper {
+    background-color: #1f1f1f00;
+    backdrop-filter: blur(15px);
+}
+
+.navbar-wrapper .nav-item .nav-link {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.navbar-wrapper .navbar-toggler {
+    background-color: var(--primary-color);
+    padding: 2px 6px;
+}
+
+
+#sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    background-color: #171717;
+    background-color: #1f1f1fe4;
+    backdrop-filter: blur(5px);
+}
+
+
+#sidebar .img-div {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 2px solid #f0f0f0;
+}
+
+#sidebar .img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 58%;
+}
+
+#mainContent .top-content {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1f1f1f;
+    backdrop-filter: blur(15px);
+    padding: 5px 10px;
+}
+
+
+#mainContent .project-div {
+    background: #1f1f1f;
+    background-color: #1f1f1fe4;
+    backdrop-filter: blur(5px);
+}
+
+
+
+#pagination {}
+
+
+#pagination button {
+    background: #1f1f1fe4;
+    border: none;
+    color: #d49e3a;
+    margin-right: 0.445rem;
+    padding: 4px 8px;
+    border-radius: 0.657rem;
+    border: 1px solid #d49e3a;
+}
+
+
+
+.footer {
+    background-color: #1f1f1fe4;
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+    .navbar-wrapper {
+        background-color: #1f1f1fe4;
+        backdrop-filter: blur(5px);
+    }
+
+    #sidebar {
+        position: relative;
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    #mainContent {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}

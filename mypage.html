@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="navbar navbar-expand-lg text-white navbar-wrapper">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+
+            <div class="col-md-4 text-white shadow-lg" id="sidebar">
+                <div class="text-center">
+                    <div class="img-div mb-3">
+                        <img src="assets\images\me.png" alt="Profile Image" class="img-fluid" id="profileImage">
+                    </div>
+                    <h1 class="">Anil Swami</h1>
+                    <h4>AI, ML and Prompt Engineer</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem quia dolorum laudantium doloremque, laborum architecto minus totam! Perspiciatis consectetur tenetur error qui nam.</p>
+                    <div class="-grid gap-2 w-75 mx-auto">
+                        <a href="path/to/resume.pdf" class="main-btn mb-2" target="_blank">Preview Resume</a>
+                        <a href="#contact" class="white-btn">Let's talk →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-8 offset-md-4 p-3 text-white" id="mainContent">
+                <div class="col">
+                    <div class="top-content">
+                        <h1 class="fs-1">Work</h1>
+
+                        <!--Add Pagination here-->
+                        <div id="pagination" class="mb-3">
+                            <button onclick="showProjects(1, 1, 2)">Machine Learning</button>
+                            <button onclick="showProjects(1, 2, 2)">Django</button>
+                            <button onclick="showProjects(1, 3, 2)">Other</button>
+                        </div>
+                    </div>
+                    <div id="projects-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center footer p-3">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sample.js"></script>
+</body>
+</html>
